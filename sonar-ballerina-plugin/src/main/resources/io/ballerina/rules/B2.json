@@ -1,0 +1,17 @@
+{
+  "title": "Avoid checkpanic, prefer explicit error handling",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "2min"
+  },
+  "tags": [
+    "error-handling"
+  ],
+  "defaultSeverity": "Major",
+  "ruleSpecification": "",
+  "sqKey": "B2",
+  "scope": "All",
+  "quickfix": "unknown"
+}

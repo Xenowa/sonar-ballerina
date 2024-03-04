@@ -1,0 +1,17 @@
+{
+  "title": "Functions should not have too many parameters",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "20min"
+  },
+  "tags": [
+    "brain-overload"
+  ],
+  "defaultSeverity": "Major",
+  "ruleSpecification": "",
+  "sqKey": "B1",
+  "scope": "All",
+  "quickfix": "unknown"
+}
