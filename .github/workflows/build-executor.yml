@@ -37,12 +37,12 @@ jobs:
 
       - name: Build Ballerina static code analysis tool and add scan command
         run: |
-          git clone https://github.com/Xenowa/static-code-analysis-tool.git
-          cd static-code-analysis-tool
-          chmod +x gradlew
-          ./gradlew build - x check
-          cd ../
-          rm -rf static-code-analysis-tool
+          git clone https://github.com/Xenowa/static-code-analysis-tool.git;
+          cd static-code-analysis-tool;
+          chmod +x gradlew;
+          ./gradlew build - x check;
+          cd ../;
+          rm -rf static-code-analysis-tool;
 
       - name: Build with Gradle
         env:
