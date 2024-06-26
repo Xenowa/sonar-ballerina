@@ -65,6 +65,9 @@ public class BallerinaSensorTest extends AbstractSensorTest {
         // Trigger analysis
         BallerinaSensor sensor = sensor();
         sensor.execute(context);
+        if (Files.exists(filePath)) {
+            Files.delete(filePath);
+        }
         List<Issue> issues = context.allIssues().stream().toList();
         Assert.assertEquals(issues.size(), 3);
         assertIssue(issues.get(0), "ballerina:B1", "Avoid checkpanic",
